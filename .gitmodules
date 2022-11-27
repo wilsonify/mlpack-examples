@@ -1,3 +1,6 @@
 [submodule "external/mlpack"]
 	path = external/mlpack
 	url = https://github.com/mlpack/mlpack.git
+[submodule "external/armadillo-code"]
+	path = external/armadillo-code
+	url = https://gitlab.com/conradsnicta/armadillo-code.git
