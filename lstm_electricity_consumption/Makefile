@@ -37,3 +37,6 @@ all: $(TARGET)
 clean:
 	@echo CLEAN $(CLEAN_LIST)
 	@rm -f $(CLEAN_LIST)
+
+docker-build:
+	docker run --rm --name mlpack-examples-builder --user 1000:1000 mlpack-examples-builder -v /home/thom/repos/mlpack-examples/lstm_electricity_consumption:/root mlpack-examples-base make all
